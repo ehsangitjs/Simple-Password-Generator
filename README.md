@@ -2,7 +2,7 @@
 This is a Electron app
 ----------------------
 
-![Screenshot](image/Screenshot.png)
+![Screenshot](Screenshot.png)
 
 ### This is a Password Generator
 
