@@ -1,0 +1,15 @@
+{
+  "name": "Simple-Password-Generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^14.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ./"
+  },
+  "author": "",
+  "license": "ISC"
+}

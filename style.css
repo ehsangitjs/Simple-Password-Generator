@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    font-weight: 300;
+    -webkit-app-region:drag;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom , #139de8 20%,#196aec);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+}
+button{
+    -webkit-app-region:no-drag;
+    outline: none;
+    cursor: pointer;
+}
+.main{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.password,.copy{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: solid 2px rgb(212, 209, 24);
+    background-color: transparent;
+    font-size: 16px;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+.password-image{
+    filter: hue-rotate(180deg);
+}
+.password-image,.copy-image{
+    -webkit-app-region:no-drag;
+    width: 30px;
+    cursor: pointer;
+}
+.password-here{
+    color: white;
+    letter-spacing: 2px;
+}
+.copy{
+    border-radius: 100px;
+}
+.copy-image{
+    width: 20px;
+    margin-right: 3px;
+}
+.password-copy{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 32, 32);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+    animation: drop 0.8s forwards;
+}
+.password-copy span{
+    color: white;
+    font-size: 20px;
+}
+@keyframes drop {
+    from{
+        transform: translateY(60px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+@keyframes drop2 {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(60px);
+    }
+}
